@@ -50,6 +50,7 @@ module.exports = {
     ],
     "import/no-unresolved": [2, { ignore: ["\\.ts$"] }],
     quotes: 0,
+    "no-undef": 0,
     // js 以及 ts文件忽略后缀
     "import/extensions": [
       "error",

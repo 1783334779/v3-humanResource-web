@@ -1,16 +1,15 @@
 <script setup lang="ts">
-// import { RouterLink, RouterView } from "vue-router";
-// import HelloWorld from "@/components/HelloWorld.vue";
-// import data from "@/assets/data";
-// // import data1 from "./data.js";
-// const clickFn = () => {
-//   console.log(111);
-//   ElMessage("this is a message.");
-// };
-// console.log(data);
+import { RouterLink, RouterView } from "vue-router";
+import HelloWorld from "@/components/HelloWorld.vue";
+import data from "@/assets/data";
+// import data1 from "./data.js";
+const clickFn = () => {
+  ElMessage("this is a message.");
+};
+console.log(data);
 </script>
 <template>
-  <!-- <header>
+  <header>
     <el-button type="primary">Primary</el-button>
     <el-button type="success" @click="clickFn">Success</el-button>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
@@ -22,7 +21,7 @@
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
-  </header> -->
+  </header>
 
   <RouterView />
 </template>
