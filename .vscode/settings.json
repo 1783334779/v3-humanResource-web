@@ -1,0 +1,100 @@
+{
+  // git path, 根据自己电脑设置, 例如："D:/software/Git/bin/git.exe"
+  "git.path": "C:/Program Files/Git/bin/git.exe",
+  // vscode默认启用了根据文件类型自动设置tabsize的选项
+  "editor.detectIndentation": false,
+  // 缩进插入空格
+  "editor.insertSpaces": true,
+  // 重新设定tabsize
+  "editor.tabSize": 2,
+  // 是否在输入代码时实时显示提示信息
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  // Controls whether to follow symlinks while searching.---设置为true时vscode占用大量内存，会卡死
+  "search.followSymlinks": false,
+  // 指定vetur对JS的format规则为：none.关闭对js文件的格式化
+  "vetur.format.defaultFormatter.js": "none",
+  // 每次保存的时候自动格式化 
+  "editor.formatOnSave": true,
+  // ### eslint config ### //
+  // 保存时自动修复
+  "eslint.autoFixOnSave": true,
+  // 设置eslint校验的js语言,添加对vue的支持
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "vue",
+      "autoFix": true
+    }
+  ],
+  // 总是显示eslint状态
+  "eslint.alwaysShowStatus": true,
+  // 当在 VS Code 中重命名或移动文件时，启用或禁用自动更新导入路径。要求工作区使用高于 2.9 版本的 TypeScript。
+  //  - prompt: 在每次重命名时进行提示。
+  //  - always: 始终自动更新路径。
+  //  - never: 一律不要重命名路径，也不要提示。
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  // ### koroFileHeader config ### //
+  // 覆盖koroFileHeader插件原有设置
+  "fileheader.configObj": {
+    "createFileTime": true,
+    "timeNoDetail": false,
+    "language": {
+      "languagetest": {
+        "head": "/$$",
+        "middle": " $ @",
+        "end": " $/"
+      }
+    },
+    "autoAdd": true, // 自动添加头注释
+    "autoAlready": true,
+    "annotationStr": {
+      "head": "/*",
+      "middle": " * @",
+      "end": " */",
+      "use": false
+    },
+    "headInsertLine": {
+      "php": 2
+    }
+  },
+  // 去除json文件注释的报错，【PS:package.json文件内不能有注释】
+  "files.associations": {
+    "*.json": "jsonc"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // "prettier.printWidth": 124, // 超过最大值换行   
+  "files.autoSave": "off",
+  
+  "vetur.validation.interpolation": false,
+  "git.enableSmartCommit": true,
+  "window.zoomLevel": -1,
+  "workbench.colorTheme": "One Dark Pro",
+  "volar.autoCompleteRefs": true,
+  "volar.doctor.checkVueTsc": true,
+  "volar.icon.splitEditors": true,
+  "volar.vueserver.disableFileWatcher": true,
+  "volar.vueserver.fullCompletionList": true,
+  "volar.vueserver.noProjectReferences": true,
+  "volar.vueserver.reverseConfigFilePriority": true,
+  "volar.vueserver.petiteVue.processHtmlFile": true,
+  "volar.vueserver.vitePress.processMdFile": true,
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 120,
+  "debug.console.wordWrap": false,
+}
